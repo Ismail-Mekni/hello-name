@@ -1,4 +1,4 @@
-package com.ismail.helloname.business;
+package com.ismail.helloname.repositories;
 
 import com.ismail.helloname.entities.Name;
 

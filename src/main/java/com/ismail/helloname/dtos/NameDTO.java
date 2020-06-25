@@ -4,12 +4,13 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "name")
+@Table(name = "hello_name")
 public class NameDTO {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    @Column(nullable = false)
     private String name;
 
     public NameDTO(int id, String name) {

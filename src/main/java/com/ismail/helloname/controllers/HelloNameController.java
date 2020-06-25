@@ -2,10 +2,8 @@ package com.ismail.helloname.controllers;
 
 import com.ismail.helloname.business.HelloNameBusiness;
 import com.ismail.helloname.entities.Name;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -13,6 +11,7 @@ import java.util.List;
 @RequestMapping("name")
 public class HelloNameController {
 
+    @Autowired
     private HelloNameBusiness helloNameBusiness;
 
     @GetMapping("/all")
@@ -21,7 +20,7 @@ public class HelloNameController {
     }
 
     @PostMapping
-    public void createName(String name){
+    public void createName(@RequestBody String name){
         helloNameBusiness.createHelloName(name);
     }
 }

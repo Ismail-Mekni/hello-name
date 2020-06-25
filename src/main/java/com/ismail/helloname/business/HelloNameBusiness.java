@@ -1,6 +1,7 @@
 package com.ismail.helloname.business;
 
 import com.ismail.helloname.entities.Name;
+import com.ismail.helloname.repositories.HelloNameRepository;
 
 import java.util.List;
 
