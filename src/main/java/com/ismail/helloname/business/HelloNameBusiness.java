@@ -1,6 +1,6 @@
 package com.ismail.helloname.business;
 
-import com.ismail.helloname.entities.Name;
+import com.ismail.helloname.entities.HelloName;
 import com.ismail.helloname.repositories.HelloNameRepository;
 
 import java.util.List;
@@ -19,12 +19,12 @@ public class HelloNameBusiness {
     }
 
     public void createHelloName(String name) {
-        Name helloName = new Name();
+        HelloName helloName = new HelloName();
         helloName.setName(HELLO + name);
         helloNameRepository.save(helloName);
     }
 
-    public List<Name> getAllHelloNames() {
+    public List<HelloName> getAllHelloNames() {
         return helloNameRepository.findAll();
     }
 }

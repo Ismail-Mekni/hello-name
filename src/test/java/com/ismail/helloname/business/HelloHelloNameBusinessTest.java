@@ -1,7 +1,7 @@
 package com.ismail.helloname.business;
 
 
-import com.ismail.helloname.entities.Name;
+import com.ismail.helloname.entities.HelloName;
 import com.ismail.helloname.repositories.MockHelloNameRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import org.springframework.util.Assert;
 
 import java.util.List;
 
-public class HelloNameBusinessTest {
+public class HelloHelloNameBusinessTest {
 
     private HelloNameBusiness helloNameBusiness;
 
@@ -25,9 +25,9 @@ public class HelloNameBusinessTest {
 
     @Test
     public void testGetAllHelloNames(){
-        List<Name> names=helloNameBusiness.getAllHelloNames();
+        List<HelloName> helloNames =helloNameBusiness.getAllHelloNames();
 
-        Assert.noNullElements(names, "Testing not null elements");
+        Assert.noNullElements(helloNames, "Testing not null elements");
     }
 
 }

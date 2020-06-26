@@ -1,13 +1,13 @@
 package com.ismail.helloname.entities;
 
-public class Name {
+public class HelloName {
     private String name;
 
-    public Name(String name) {
+    public HelloName(String name) {
         this.name = name;
     }
 
-    public Name() {
+    public HelloName() {
     }
 
     public String getName() {

@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "hello_name")
-public class NameDTO {
+public class HelloNameDTO {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -13,12 +13,12 @@ public class NameDTO {
     @Column(nullable = false)
     private String name;
 
-    public NameDTO(int id, String name) {
+    public HelloNameDTO(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public NameDTO() {
+    public HelloNameDTO() {
     }
 
     public Integer getId() {
@@ -41,9 +41,9 @@ public class NameDTO {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        NameDTO nameDTO = (NameDTO) o;
-        return id == nameDTO.id &&
-                name.equals(nameDTO.name);
+        HelloNameDTO helloNameDTO = (HelloNameDTO) o;
+        return id == helloNameDTO.id &&
+                name.equals(helloNameDTO.name);
     }
 
     @Override

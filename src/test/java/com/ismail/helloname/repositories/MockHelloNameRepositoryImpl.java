@@ -1,6 +1,6 @@
 package com.ismail.helloname.repositories;
 
-import com.ismail.helloname.entities.Name;
+import com.ismail.helloname.entities.HelloName;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,13 +8,13 @@ import java.util.List;
 public class MockHelloNameRepositoryImpl implements HelloNameRepository {
 
     @Override
-    public void save(Name name) {
-        System.out.println(name.getName()+" Saved");
+    public void save(HelloName helloName) {
+        System.out.println(helloName.getName()+" Saved");
     }
 
     @Override
-    public List<Name> findAll() {
+    public List<HelloName> findAll() {
 
-        return Arrays.asList(new Name("Ismail"), new Name("Alaa"));
+        return Arrays.asList(new HelloName("Ismail"), new HelloName("Alaa"));
     }
 }

@@ -1,12 +1,12 @@
 package com.ismail.helloname.repositories;
 
-import com.ismail.helloname.entities.Name;
+import com.ismail.helloname.entities.HelloName;
 
 import java.util.List;
 
 public interface HelloNameRepository {
 
-    void save(Name name);
+    void save(HelloName helloName);
 
-    List<Name> findAll();
+    List<HelloName> findAll();
 }
