@@ -7,7 +7,7 @@ import java.util.List;
 
 public class HelloNameBusiness {
 
-    HelloNameRepository helloNameRepository;
+    private HelloNameRepository helloNameRepository;
 
     public final static String HELLO = "Hello ";
 
