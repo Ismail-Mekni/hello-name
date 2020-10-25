@@ -3,8 +3,8 @@ package com.ismail.helloname.business;
 
 import com.ismail.helloname.entities.HelloName;
 import com.ismail.helloname.repositories.MockHelloNameRepositoryImpl;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 import org.springframework.util.Assert;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public class HelloHelloNameBusinessTest {
 
     private HelloNameBusiness helloNameBusiness;
 
-    @BeforeEach
+    @Before
     public void setUp(){
         helloNameBusiness=new HelloNameBusiness(new MockHelloNameRepositoryImpl());
     }
